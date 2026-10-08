@@ -26,6 +26,9 @@ public class Showtime {
     String id;
     Theater theater;
     LocalDateTime dateTime;
+    String screenLabel;
+    Movie movie;
+    List<Reservation> reservations;
 
     public String getId() {
         return id;
@@ -46,10 +49,6 @@ public class Showtime {
     public Movie getMovie() {
         return movie;
     }
-
-    String screenLabel;
-    Movie movie;
-    List<Reservation> reservations;
 
     public Showtime(String id, Theater theater, LocalDateTime dateTime, String screenLabel, Movie movie){
         this.id = id;
